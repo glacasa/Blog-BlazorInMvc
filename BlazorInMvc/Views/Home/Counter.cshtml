@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Counter";
+}
+
+    @(await Html.RenderComponentAsync<BlazorInMvc.Components.Counter>())
+
+    @section Header{
+        <base href="~/Home" />
+    }
+
+    @section Scripts{
+        <script src="~/_framework/blazor.server.js"></script>
+    }

@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Index";
+}
+
+@(await Html.RenderComponentAsync<BlazorInMvc.Components.Nav>())
+
+@section Header{
+    <base href="~/Nav" />
+}
+
+@section Scripts{
+    <script src="~/_framework/blazor.server.js"></script>
+}
