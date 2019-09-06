@@ -2,12 +2,12 @@
     ViewData["Title"] = "Counter";
 }
 
-    @(await Html.RenderComponentAsync<BlazorInMvc.Components.Counter>())
+@(await Html.RenderComponentAsync<BlazorInMvc.Components.Counter>(RenderMode.Server))
 
-    @section Header{
-        <base href="~/Home" />
-    }
+@section Header{
+    <base href="~/Home" />
+}
 
-    @section Scripts{
-        <script src="~/_framework/blazor.server.js"></script>
-    }
+@section Scripts{
+    <script src="~/_framework/blazor.server.js"></script>
+}

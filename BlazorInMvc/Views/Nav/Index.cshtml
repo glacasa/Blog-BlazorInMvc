@@ -2,7 +2,7 @@
     ViewData["Title"] = "Index";
 }
 
-@(await Html.RenderComponentAsync<BlazorInMvc.Components.Nav>())
+@(await Html.RenderComponentAsync<BlazorInMvc.Components.Nav>(RenderMode.Server))
 
 @section Header{
     <base href="~/Nav" />

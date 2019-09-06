@@ -45,8 +45,8 @@ namespace BlazorInMvc
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
-                  name: "dossier",
-                  pattern: "Nav/{page?}/{id?}",
+                  name: "blazorNav",
+                  pattern: "Nav/{page?}",
                   defaults: new { controller = "Nav", action = "Index" }
                 );
 
